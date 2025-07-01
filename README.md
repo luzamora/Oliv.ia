@@ -17,14 +17,6 @@ Oliv.ia is an interactive web application built with Streamlit that combines Exp
 
 ## Features
 
-### Exploratory Data Analysis (EDA)
-
-- Interactive map showing restaurant locations by US state.
-- Visual analysis of top categories, cities, and attributes.
-- Word clouds based on restaurant reviews and categories.
-- Distribution of ratings by city and state.
-- Data filtering by state and rating.
-
 ### Recommendation System
 
 - Custom search by free text and state filters.
@@ -34,15 +26,28 @@ Oliv.ia is an interactive web application built with Streamlit that combines Exp
 - Detailed view of each restaurant including address, rating, categories, and amenities.
 - Top 5 recommended restaurants list with a button to see details.
 
-## Screenshots
-### EDA
-<img src="img/eda1.png" width="600">
-<img src="img/eda2.png" width="600">
+### Exploratory Data Analysis (EDA)
 
-### Model
-<img src="img/app1.png" width="600">
-<img src="img/app2.png" width="600">
-<img src="img/app3.png" width="600">
+- Interactive map showing restaurant locations by US state.
+- Visual analysis of top categories, cities, and attributes.
+- Word clouds based on restaurant reviews and categories.
+- Distribution of ratings by city and state.
+- Data filtering by state and rating.
+
+
+## Screenshots
+### Recommendator
+<img src="img/app_1.png" width="600">
+<img src="img/app_2.png" width="600">
+<img src="img/app_3.png" width="600">
+
+### EDA
+<img src="img/eda_1.png" width="600">
+<img src="img/eda_2.png" width="600">
+
+### Catalogue
+<img src="img/catalogue_1.png" width="600">
+
 
 ## Installation
 
@@ -103,21 +108,21 @@ The project includes a `notebooks/` folder containing the detailed development o
 
 > ⚠️ **Note**: All notebooks assume that the `datasets/` folder is located at the same level as `notebooks/` in the project structure.
 
-
-
 ## Project Structure
 
+```
 olivia/
-├── app.py # Main Streamlit app
-├── pages/ # Sub-pages (EDA, Recommender, etc.)
-├── datasets/ # Dataset files (not included in repo)
-├── img/ # Images, logos, wordclouds, screenshots
-├── models/ # (Optional) Saved models or embeddings
-├── notebooks/ # Jupyter Notebooks for preprocessing, EDA, feature extraction, and validation
-├── README.md # Documentation
-├── requirements.txt # Python dependencies
-├── .gitignore # Git ignore file
+├── app.py                # Main Streamlit app
+├── pages/                # Sub-pages (EDA, Recommender, etc.)
+├── datasets/             # Dataset files (not included in repo)
+├── img/                  # Images, logos, wordclouds, screenshots
+├── models/               # (Optional) Saved models or embeddings
+├── notebooks/            # Jupyter Notebooks for preprocessing, EDA, feature extraction, and validation
+├── README.md             # Documentation
+├── requirements.txt      # Python dependencies
+├── .gitignore            # Git ignore file
 └── ...
+```
 
 ##  Requirements
 
