@@ -1,4 +1,5 @@
 # Oliv.ia - Restaurant Recommendation System
+<img src="img/logo.png" width="600">
 
 ## Overview
 
@@ -87,34 +88,36 @@ The app will open automatically in your default web browser.
 ---
 ## Notebooks
 
-The `/notebooks` folder includes all the development notebooks used during the project:
+The project includes a `notebooks/` folder containing the detailed development of all pipeline phases. The recommended execution order is as follows:
 
-- **01_preprocessing.ipynb**: Data cleaning and format standardization.
-- **02_eda.ipynb**: Exploratory Data Analysis with visual insights.
-- **03_feature_extraction.ipynb**: Extraction of textual and categorical features.
-- **04_validation.ipynb**: Evaluation and testing of the recommendation system.
+| Nº  | Notebook                                 | Description                                                                 |
+|-----|------------------------------------------|-----------------------------------------------------------------------------|
+| 01  | `01_preprocessing.ipynb`                 | Initial preprocessing of the base datasets (Yelp business and reviews). Cleaning, transformation, and data merging. |
+| 02  | `02_eda.ipynb`                           | Exploratory Data Analysis (EDA): visualizations, maps, category and rating distributions, word clouds, etc. |
+| 03  | `03_Feature_extraction.ipynb`            | Feature extraction from textual and semantic content. Embedding generation and text processing. |
+| 04  | `04_yelp_testing_inputs.csv`             | Input file with example queries for testing the recommendation system.     |
+| 05  | `04_yelp_validation_input_testing.ipynb` | Manual evaluation of the system using natural language queries. Comparison between results and expectations. |
+| 06  | `05_yelp_validation_preprocessing.ipynb` | Data preparation for system validation.                                     |
+| 07  | `06_yelp_validation_training.ipynb`      | Training simulation: embedding organization and internal validation.        |
+| 08  | `07_yelp_validation_testing.ipynb`       | Evaluation and visualization of the recommender's performance in different scenarios. |
 
-These notebooks document the full development workflow of the application.
+> ⚠️ **Note**: All notebooks assume that the `datasets/` folder is located at the same level as `notebooks/` in the project structure.
 
-> ⚠️ **Important:** The `datasets/` folder must be located at the root level of the project (alongside `app.py` and `notebooks/`), not inside the `notebooks/` folder.  
-> Otherwise, the notebooks and the app will not be able to correctly locate the data files.
+
 
 ## Project Structure
 
-```
 olivia/
-├── app.py                # Main Streamlit app
-├── pages/                # Sub-pages (EDA, Recommender, etc.)
-├── datasets/             # Dataset files (not included in repo)
-├── img/                  # Images, logos, wordclouds, screenshots
-├── models/               # (Optional) Saved models or embeddings
-├── README.md             # Documentation
-├── requirements.txt      # Python dependencies
-├── .gitignore            # Git ignore file
+├── app.py # Main Streamlit app
+├── pages/ # Sub-pages (EDA, Recommender, etc.)
+├── datasets/ # Dataset files (not included in repo)
+├── img/ # Images, logos, wordclouds, screenshots
+├── models/ # (Optional) Saved models or embeddings
+├── notebooks/ # Jupyter Notebooks for preprocessing, EDA, feature extraction, and validation
+├── README.md # Documentation
+├── requirements.txt # Python dependencies
+├── .gitignore # Git ignore file
 └── ...
-```
-
----
 
 ##  Requirements
 
@@ -156,7 +159,7 @@ The recommender uses a combination of:
 
 ---
 
-## 💻 Author
+## Author
 
 Made with ❤️ by DeepWinner 
 Santiago Arranz Orlandi,
@@ -165,7 +168,7 @@ Lucía García González
 
 ---
 
-## 📜 License
+## License
 
 This project is for educational and research purposes, and uses data provided under the **[Yelp Dataset Terms of Use](https://www.yelp.com/dataset)**.
 
