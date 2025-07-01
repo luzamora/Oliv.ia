@@ -264,7 +264,7 @@ st.plotly_chart(fig_attributes, use_container_width=True)
 
 # === FOOTER ===
 st.markdown("---")
-st.markdown("If you want to know more about the dataset, check the full EDA notebook [here](link-to-your-notebook).")
+st.markdown("If you want to know more about the dataset, check the full EDA notebook [here](https://github.com/luzamora/Oliv.ia/blob/main/notebooks/02_eda.ipynb).")
 
 
 
