@@ -1,0 +1,83 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files (parquet, csv, excel, json, etc.)
+datasets/
+*.parquet
+*.csv
+*.xls
+*.xlsx
+*.json
+
+# Yelp photos folder (si no quieres subir imágenes pesadas)
+yelp-photos/
+
+# Environment / virtualenv
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Logs and temp files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python cache
+*.pyc
+
+# Streamlit cache and config
+.streamlit/
+.streamlit_cache/
+
+# IDE settings
+.vscode/
+.idea/
+*.iml
+
+# Coverage reports
+.coverage
+htmlcov/
+.coverage.*
+
+# Pytest cache
+.pytest_cache/
+
+# mypy cache
+.mypy_cache/
+
+# VS Code workspace settings
+*.code-workspace
+
+# MacOS specific
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Others
+*.orig
+*.rej
