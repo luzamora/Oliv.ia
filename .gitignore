@@ -23,6 +23,7 @@ datasets/
 *.xlsx
 *.json
 
+!notebooks/04_yelp_testing_inputs.csv
 # Yelp photos folder (si no quieres subir imágenes pesadas)
 yelp-photos/
 
